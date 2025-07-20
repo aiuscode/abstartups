@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Prolancer - Login</title>
+  <style>
+    * {box-sizing: border-box;}
+    body {font-family: Arial, sans-serif; background-color: #f5f5f5; display:flex; justify-content: center; align-items:center; height:100vh; margin:0;}
+    .login-container {background:#fff; padding:40px; border-radius:8px; width:300px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);}
+    h1 {text-align:center; margin-bottom:20px;}
+    label {display:block; margin-bottom:5px;}
+    input[type="email"], input[type="password"] {width:100%; padding:8px; margin-bottom:15px; border:1px solid #ccc; border-radius:4px;}
+    .user-type {margin-bottom:15px;}
+    button {width:100%; padding:10px; background-color:#227202; color:#fff; border:none; border-radius:4px; cursor:pointer;}
+    button:hover {background-color:#36a50a;}
+    .signup-link {text-align:center; margin-top:10px;}
+    .signup-link a {color:#227202; text-decoration:none;}
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h1>Login</h1>
+    <form action="#" method="post">
+      <div class="user-type">
+        <label>
+          <input type="radio" name="tipo" value="cliente" checked>
+          Cliente
+        </label>
+        <label>
+          <input type="radio" name="tipo" value="prolancer">
+          Profissional
+        </label>
+      </div>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+      <label for="senha">Senha</label>
+      <input type="password" id="senha" name="senha" required>
+      <button type="submit">Entrar</button>
+    </form>
+    <div class="signup-link">
+      <span>Não tem conta?</span> <a href="#">Criar conta</a>
+    </div>
+  </div>
+</body>
+</html>
